@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="./assets/logo.png" type="image/png">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ahmad Saad</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">
+        <img src="./assets/logo.png" alt="Logo" class="logo-img" />
+        <span>Ahmad Saad</span>
+      </div>
+      
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#Experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    
+    <nav id="hamburger-nav">
+      <img src="./assets/logo.png" alt="Logo" class="logo-img" />
+
+      <!-- <div class="logo">Ahmad Saad</div> -->
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#Experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Ahmad Saad profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Ahmad Saad</h1>
+        <p class="section__text__p2">Flutter Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/ِAhmad_Saad_CV.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="scrollToContact()">Contact Info</button>
+
+<script>
+  function scrollToContact() {
+    // العثور على عنصر القسم باستخدام الـ ID
+    var contactSection = document.getElementById("contact");
+    
+    // التمرير إلى العنصر
+    contactSection.scrollIntoView({
+      behavior: "smooth", // التمرير بسلاسة
+      block: "start"      // بدء التمرير من أعلى القسم
+    });
+  }
+</script>
+
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https:www.linkedin.com/in/ahmad-saad-281240325'
+"
+          />
+        <div id="socials-container">
+          <img
+            src="./assets/insta.png"
+            alt="My instagram profile"
+            class="icon"
+            onclick="location.href='https:www.instagram.com/eng.ahmad_saad'""
+          />
+        <div id="socials-container">
+          <div id="socials-container">
+            <img
+              src="./assets/call.png"
+              alt="Call me"
+              class="icon"
+              onclick="showPhoneNumber()"
+            />
+          </div>
+          
+          <p id="phone-number" style="display: none; font-size: 18px; font-weight: bold;"></p>
+          
+          <script>
+            function showPhoneNumber() {
+              const phoneNumber = "+963994191372";
+              
+              document.getElementById("phone-number").textContent = phoneNumber;
+              document.getElementById("phone-number").style.display = "block";
+          
+              // فتح تطبيق الاتصال على الهاتف
+              if (/Mobi|Android|iPhone/i.test(navigator.userAgent)) {
+                window.location.href = "tel:" + phoneNumber;
+              }
+            }
+          </script>
+          
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https:github.com/ahmadsaad2000'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/Experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>3+ years <br />Flutter Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Eng. in Software Engineering </p>
+<p>Dip. in Business Administration</p>
+
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I guarantee you to design highly efficient applications with a visual identity that matches the idea of ​​the application and the different screen sizes, with clean code and integration with the back-end, while applying security standards and Material UI design. 
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#Experience'"
+      />
+    </section>
+    <section id="Experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="Experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="Experience-sub-title">Mobile & Web Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Flutter</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Dart</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML & CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>UI/UX</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Firebase</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="Experience-sub-title">Backend & Tools</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git & GitHub</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>RESTful APIs</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Node.js</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express.js</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MongoDB</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+       
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="Experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="Experience-sub-title project-title">rest dashbord</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https:github.com/ahmadsaad2000/restaurant-dashboard/tree/master'"
+              >
+                Github
+              </button>
+             
+        
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="Experience-sub-title project-title">MY DOCTOR</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https:github.com/ahmadsaad2000/Doctoapp/tree/master'"
+              >
+                Github
+              </button>
+             
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="Experience-sub-title project-title">WASITY</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https:github.com/meory101/wasity-mobile/tree/ahmad'"
+              >
+                Github
+        
+            </div>
+          </div>
+        </div>
+        
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">sw.eng.ahmad.saad@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <div style="display: flex; align-items: center;">
+            <img 
+              src="./assets/call.png" 
+              alt="Call me" 
+              class="icon" 
+              onclick="makePhoneCall()" 
+              style="cursor: pointer;"
+            />
+            <p id="phone-number" style="margin-left: 10px; font-size: 18px; font-weight: bold;">+963994191372</p>
+          </div>
+          
+          <script>
+            function makePhoneCall() {
+              const phoneNumber = "+963994191372";
+              
+              if (/Mobi|Android|iPhone/i.test(navigator.userAgent)) {
+                window.location.href = "tel:" + phoneNumber;
+              }
+            }
+          </script>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#Experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Ahmad Saad. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
